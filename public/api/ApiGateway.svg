@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#1a1a2e"/>
+  <!-- outer gate -->
+  <rect x="10" y="14" width="44" height="36" rx="6" fill="none" stroke="url(#g)" stroke-width="2.5"/>
+  <!-- inner doorway -->
+  <rect x="22" y="22" width="20" height="20" rx="3" fill="url(#g)" opacity="0.25"/>
+  <!-- flow arrows -->
+  <path d="M4 32 L14 32" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="14,32 9,29 9,35" fill="#22d3ee"/>
+  <path d="M50 32 L60 32" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="60,32 55,29 55,35" fill="#a78bfa"/>
+  <!-- center node -->
+  <circle cx="32" cy="32" r="4" fill="url(#g)"/>
+</svg>

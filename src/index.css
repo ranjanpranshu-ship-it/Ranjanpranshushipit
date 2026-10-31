@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Manrope", sans-serif;
+    --breakpoint-mid: 1300px;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 24s linear infinite;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
