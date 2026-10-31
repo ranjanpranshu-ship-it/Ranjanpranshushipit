@@ -7,6 +7,8 @@ import {
   introductiontitletextStyle, introductiontitletextStyle2, introductiontextStyle, introductionbuttonContainerStyle, introductionbuttonStyle,
   socialmediaContainerStyle, socialmediaStyle, introcol1, introcol2, introcodebackgroundStyle, ContentBlurStyle2, bootomtile, bootomtileitem
 } from '../styles/introduction.tsx'
+import { asset } from '../libs/assets.ts'
+
 
 interface IntroProps {
   onNavigate: (page: Page) => void
@@ -34,84 +36,84 @@ export default function Intro({ onNavigate }: IntroProps) {
                 className={introductionbuttonStyle1}
                 onClick={() => onNavigate('Projects')}
               >
-                View My Projects <img src="/intro/arrow-right.svg" alt="" className="w-4 h-4 ml-2" />
+                View My Projects <img src={asset('/intro/arrow-right.svg')} alt="" className="w-4 h-4 ml-2" />
               </button>
               <button
                 type="button"
                 className={introductionbuttonStyle}
                 onClick={() => onNavigate('Social')}
               >
-                Get in Touch <img src="/intro/email.svg" alt="" className="w-4 h-4 ml-2" />
+                Get in Touch <img src={asset('/intro/email.svg')} alt="" className="w-4 h-4 ml-2" />
               </button>
             </div>
             <div className={socialmediaContainerStyle}>
-              <img src="/intro/gitlab.svg" alt="GitLab" className={socialmediaStyle} />
-              <img src="/intro/github.svg" alt="GitHub" className={socialmediaStyle} />
-              <img src="/intro/linkedin.svg" alt="LinkedIn" className={socialmediaStyle} />
-              <img src="/intro/email-filled.svg" alt="Email" className={socialmediaStyle} />
+              <img src={asset('/intro/gitlab.svg')} alt="GitLab" className={socialmediaStyle} />
+              <img src={asset('/intro/github.svg')} alt="GitHub" className={socialmediaStyle} />
+              <img src={asset('/intro/linkedin.svg')} alt="LinkedIn" className={socialmediaStyle} />
+              <img src={asset('/intro/email-filled.svg')} alt="Email" className={socialmediaStyle} />
             </div>
           </div>
           <div className={introcol2}>
             <div className={ContentBlurStyle2} aria-hidden="true"></div>
-            <img src="/intro/Backend.png" alt="Backend illustration" className={introcodebackgroundStyle} />
+            <img src={asset('/intro/Backend.png')} alt="Backend illustration" className={introcodebackgroundStyle} />
           </div>
         </div>
       <div className="overflow-hidden w-full">
         <div className={`${bootomtile} animate-marquee w-[max-content]`}>
           <div className={bootomtileitem}>
-            <img src="/api/nestjs.svg" alt="" className={imagestyle} />
+            <img src={asset('/api/nestjs.svg')} alt="" className={imagestyle} />
             NestJS
             </div>
           <div className={bootomtileitem}>
-            <img src="/api/typescript.svg" alt="" className={imagestyle} />
+            <img src={asset('/api/typescript.svg')} alt="" className={imagestyle} />
             TypeScript
             </div>
           <div className={bootomtileitem}>
-            <img src="/database/redis.svg" alt="" className={imagestyle} />
+            <img src={asset('/database/redis.svg')} alt="" className={imagestyle} />
             Redis
             </div>
           <div className={bootomtileitem}>
-            <img src="/database/mongo.svg" alt="" className={imagestyle} />
+            <img src={asset('/database/mongo.svg')} alt="" className={imagestyle} />
             MongoDB
             </div>
           <div className={bootomtileitem}>
-            <img src="/messaging/kefka.svg" alt="" className={imagestyle} />
+            <img src={asset('/messaging/kefka.svg')} alt="" className={imagestyle} />
             Kafka
             </div>
           <div className={bootomtileitem}>
-            <img src="/frontend/react.svg" alt="" className={imagestyle} />
+            <img src={asset('/frontend/react.svg')} alt="" className={imagestyle} />
             React
             </div>
           <div className={bootomtileitem}>
-            <img src="/frontend/tailwind.svg" alt="" className={imagestyle} />
+            <img src={asset('/frontend/tailwind.svg')} alt="" className={imagestyle} />
             Tailwind
             </div>
           <div className={bootomtileitem}>
-            <img src="/api/nestjs.svg" alt="" className={imagestyle} />
+            <img src={asset('/api/nestjs.svg')} alt="" className={imagestyle} />
             NestJS
             </div>
           <div className={bootomtileitem}>
-            <img src="/api/typescript.svg" alt="" className={imagestyle} />
+            <img src={asset('/api/typescript.svg')} alt="" className={imagestyle} />
             TypeScript
             </div>
           <div className={bootomtileitem}>
-            <img src="/database/redis.svg" alt="" className={imagestyle} />
+            <img src={asset('/database/redis.svg')} alt="" className={imagestyle} />
             Redis
             </div>
           <div className={bootomtileitem}>
-            <img src="/database/mongo.svg" alt="" className={imagestyle} />
+            <img src={asset('/database/mongo.svg')} alt="" className={imagestyle} />
             MongoDB
             </div>
           <div className={bootomtileitem}>
-            <img src="/messaging/kefka.svg" alt="" className={imagestyle} />
+            <img src={asset('/messaging/kefka.svg')} alt="" className={imagestyle} />
             Kafka
             </div>
           <div className={bootomtileitem}>
-            <img src="/frontend/react.svg" alt="" className={imagestyle} />
+            <img src={asset('/frontend/react.svg')} alt="" className={imagestyle} />
             React
             </div>
           <div className={bootomtileitem}>
-            <img src="/frontend/tailwind.svg" alt="" className={imagestyle} />
+            <img src={asset('/frontend/tailwind.svg')} alt="" className={imagestyle} />
             Tailwind
             </div>
         </div>

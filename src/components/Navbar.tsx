@@ -17,6 +17,7 @@ import {
   bottomIconText,
   navButtonActiveStyle,
 } from '../styles/nav.tsx'
+import { asset } from '../libs/assets'
 
 interface NavbarProps {
   currentPage: Page
@@ -49,7 +50,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
       {/* Desktop sidebar (mid+ only) */}
       <aside className={`${navContentStyle} hidden mid:flex`} aria-label="Primary navigation">
         <div className={titleStyle}>
-          <img src="/api/backend.svg" className={titleimageStyle} alt="Pranshu logo" />
+          <img src={asset('/api/backend.svg')} className={titleimageStyle} alt="Pranshu logo" />
           <span className={titletextStyle}>Pranshu</span>
         </div>
         <div className={navBarStyle}>

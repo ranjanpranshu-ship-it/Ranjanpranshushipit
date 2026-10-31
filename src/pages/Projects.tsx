@@ -9,6 +9,7 @@ import {
     secondprojectItemStyle, secondprojectItemTitleStyle, secondprojectItemContentStyle,
     firstprojectItemContentStyle, hiddenText, bottomItemStyle, bottomItemContentStyle, topCompartment, linkImg
 } from '../styles/project.tsx'
+import { asset } from '../libs/assets.ts'
 
 export default function Projects() {
     const [showFirst, setShowFirst] = useState(false)
@@ -25,13 +26,13 @@ export default function Projects() {
                         <div className={topCompartment}>
                         <h3 className={firstprojectItemTitleStyle}>Event-Driven Order Processing Pipeline</h3>
                         <a href="https://gitlab.com/backend-projects1893240/event-driven-order-processing-pipeline" target="_blank" rel="noopener noreferrer" className="ml-auto">
-                            <img src="/projects/gitlab.svg" alt="GitLab" className={linkImg} />
+                            <img src={asset('/projects/gitlab.svg')} alt="GitLab" className={linkImg} />
                         </a>
                         <a href="https://github.com/ranjanpranshu-ship-it/Event-Driven-Order-Processing-Pipeline" target="_blank" rel="noopener noreferrer">
-                            <img src="/social/github.svg" alt="GitHub" className={linkImg} />
+                            <img src={asset('/social/github.svg')} alt="GitHub" className={linkImg} />
                         </a>
                         <a href="https://hub.docker.com/repositories/pran4450" target="_blank" rel="noopener noreferrer">
-                            <img src="/projects/compose.svg" alt="Docker Compose" className={linkImg} />
+                            <img src={asset('/projects/compose.svg')} alt="Docker Compose" className={linkImg} />
                         </a>
                         </div><br/>
                         <p className={firstprojectItemContentStyle}> Built an event-driven backend pipeline that processes order creation events asynchronously using Apache Kafka.
@@ -70,13 +71,13 @@ export default function Projects() {
                         <div className={topCompartment}>
                         <h3 className={secondprojectItemTitleStyle}>E-commerce REST API</h3>
                         <a href="https://gitlab.com/backend-projects1893240/simple-e-commerce-api" target="_blank" rel="noopener noreferrer" className="ml-auto">
-                            <img src="/projects/gitlab.svg" alt="GitLab" className={linkImg} />
+                            <img src={asset('/projects/gitlab.svg')} alt="GitLab" className={linkImg} />
                         </a>
                         <a href="https://github.com/ranjanpranshu-ship-it/Simple-E-commerce-API" target="_blank" rel="noopener noreferrer">
-                            <img src="/social/github.svg" alt="GitHub" className={linkImg} />
+                            <img src={asset('/social/github.svg')} alt="GitHub" className={linkImg} />
                         </a>
                         <a href="https://hub.docker.com/repositories/pran4450" target="_blank" rel="noopener noreferrer">
-                            <img src="/projects/compose.svg" alt="Docker Compose" className={linkImg} />
+                            <img src={asset('/projects/compose.svg')} alt="Docker Compose" className={linkImg} />
                         </a>
                         </div><br/>
                         <p className={secondprojectItemContentStyle}> Developed an e-commerce backend using NestJS to support core shopping

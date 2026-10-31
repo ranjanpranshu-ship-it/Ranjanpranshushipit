@@ -6,6 +6,7 @@ import {
     aboutMeStyle, aboutmeBodyStyle, aboutmeTitleStyle, aboutmeTitleParagraphStyle, aboutmeContainerStyle, titleimageStyle,
     aboutmeHeadingTextStyle, aboutmeParagraphStyle, containerStyle, containerItemStyle, aboutmeParagraphTextStyle, aboutmefullStyle
 } from '../styles/about'
+import { asset } from '../libs/assets'
 
 
 export default function About() {
@@ -41,12 +42,12 @@ export default function About() {
                     </p>
                     <div className={containerStyle}>
                         <div className={containerItemStyle}>
-                            <img src="/about/server.svg" alt="" className={titleimageStyle} />
+                            <img src={asset('/about/server.svg')} alt="" className={titleimageStyle} />
                             <h1 className={aboutmeHeadingTextStyle}>Backend Development</h1>
                             <p className={aboutmeParagraphTextStyle}>NestJS, TypeScript, REST APIs</p>
                         </div>
                         <div className={containerItemStyle}>
-                            <img src="/database/database.svg" alt="" className={titleimageStyle} />
+                            <img src={asset('/database/database.svg')} alt="" className={titleimageStyle} />
                             <h1 className={aboutmeHeadingTextStyle}>Data & Messaging</h1>
                             <p className={aboutmeParagraphTextStyle}>PostgreSQL, MongoDB, Redis, Kafka</p>
                         </div>

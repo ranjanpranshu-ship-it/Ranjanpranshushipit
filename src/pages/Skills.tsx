@@ -54,6 +54,8 @@ const SKILL_LINKS: Record<string, string> = {
   HTML: "https://developer.mozilla.org/en-US/docs/Web/HTML",
 };
 
+import { asset } from '../libs/assets.ts'
+
 function SkillItem({ src, name }: { src: string; name: string }) {
   return (
     <a
@@ -81,7 +83,7 @@ function Skills() {
         <div className={skillsgridStyle}>
           <div className={backendSkillsgridItemStyle}>
             <div className="flex">
-              <img src="/api/backend.svg" className={ImageStyle} alt="" />
+              <img src={asset('/api/backend.svg')} className={ImageStyle} alt="" />
               <div className="m-2"></div>
               <div>
                 <h2 className={skillsInfoHeadingStyle}>Backend API</h2>
@@ -89,93 +91,93 @@ function Skills() {
               </div>
             </div>
             <div className={BackendAPIGridStyle}>
-              <SkillItem src="/api/nestjs.svg" name="NestJS" />
-              <SkillItem src="/api/restapi.svg" name="REST API" />
-              <SkillItem src="/api/websockit.svg" name="WebSocket" />
-              <SkillItem src="/api/typescript.svg" name="TypeScript" />
-              <SkillItem src="/api/jwt.svg" name="JWT" />
-              <SkillItem src="/api/microservices.svg" name="Microservices" />
-              <SkillItem src="/api/nodejs.svg" name="Node.js" />
-              <SkillItem src="/api/ApiGateway.svg" name="APIGateway" />
+              <SkillItem src={asset('/api/nestjs.svg')} name="NestJS" />
+              <SkillItem src={asset('/api/restapi.svg')} name="REST API" />
+              <SkillItem src={asset('/api/websockit.svg')} name="WebSocket" />
+              <SkillItem src={asset('/api/typescript.svg')} name="TypeScript" />
+              <SkillItem src={asset('/api/jwt.svg')} name="JWT" />
+              <SkillItem src={asset('/api/microservices.svg')} name="Microservices" />
+              <SkillItem src={asset('/api/nodejs.svg')} name="Node.js" />
+              <SkillItem src={asset('/api/ApiGateway.svg')} name="APIGateway" />
             </div>
           </div>
 
           <div className={DbgridItemStyle}>
             <div className="flex">
-              <img src="/database/database.svg" className={ImageStyle} alt="" />
+              <img src={asset('/database/database.svg')} className={ImageStyle} alt="" />
               <div className="m-2">
                 <h2 className={skillsInfoHeadingStyle}>Database & Caching</h2>
                 <h3 className={skillsInfoStyle}>Working with different databases and caching solutions for better performance</h3>
               </div>
             </div>
             <div className={DbandCachingGridStyle}>
-              <SkillItem src="/database/redis.svg" name="Redis" />
-              <SkillItem src="/database/postgresql.svg" name="PostgreSQL" />
-              <SkillItem src="/database/mongo.svg" name="MongoDB" />
-              <SkillItem src="/database/sql.svg" name="SQL" />
+              <SkillItem src={asset('/database/redis.svg')} name="Redis" />
+              <SkillItem src={asset('/database/postgresql.svg')} name="PostgreSQL" />
+              <SkillItem src={asset('/database/mongo.svg')} name="MongoDB" />
+              <SkillItem src={asset('/database/sql.svg')} name="SQL" />
             </div>
           </div>
 
           <div className={MassageItemStyle}>
             <div className="flex">
-              <img src="/messaging/streaming.svg" className={ImageStyle} alt="" />
+              <img src={asset('/messaging/streaming.svg')} className={ImageStyle} alt="" />
               <div className="m-2">
                 <h2 className={skillsInfoHeadingStyle}>Messaging & Streaming</h2>
                 <h3 className={skillsInfoStyle}>Enabling asynchronous communication and event-driven architectures.</h3>
               </div>
             </div>
             <div className={MassageDistGridStyle}>
-              <SkillItem src="/messaging/kefka.svg" name="Apache Kafka" />
-              <SkillItem src="/messaging/PubSub.svg" name="Redis Pub/Sub" />
-              <SkillItem src="/messaging/websockit.svg" name="WebSocket" />
+              <SkillItem src={asset('/messaging/kefka.svg')} name="Apache Kafka" />
+              <SkillItem src={asset('/messaging/PubSub.svg')} name="Redis Pub/Sub" />
+              <SkillItem src={asset('/messaging/websockit.svg')} name="WebSocket" />
             </div>
           </div>
 
           <div className={DevopItemStyle}>
             <div className="flex">
-              <img src="/devops/cloud.svg" className={ImageStyle} alt="" />
+              <img src={asset('/devops/cloud.svg')} className={ImageStyle} alt="" />
               <div className="m-2">
                 <h2 className={skillsInfoHeadingStyle}>Devops & Infrastructure</h2>
                 <h3 className={skillsInfoStyle}>Containerization, Orchestration and CI/CD for smooth Deployments.</h3>
               </div>
             </div>
             <div className={DevopAndInfraGridStyle}>
-              <SkillItem src="/devops/docker.svg" name="Docker" />
-              <SkillItem src="/devops/kubernetes.svg" name="Kubernetes" />
-              <SkillItem src="/devops/jenkins.svg" name="Jenkins" />
-              <SkillItem src="/devops/compose.svg" name="Compose" />
+              <SkillItem src={asset('/devops/docker.svg')} name="Docker" />
+              <SkillItem src={asset('/devops/kubernetes.svg')} name="Kubernetes" />
+              <SkillItem src={asset('/devops/jenkins.svg')} name="Jenkins" />
+              <SkillItem src={asset('/devops/compose.svg')} name="Compose" />
             </div>
           </div>
 
           <div className={DevopToolItemStyle}>
             <div className="flex">
-              <img src="/devtool/tools.svg" className={ImageStyle} alt="" />
+              <img src={asset('/devtool/tools.svg')} className={ImageStyle} alt="" />
               <div className="m-2">
                 <h2 className={skillsInfoHeadingStyle}>Tools</h2>
                 <h3 className={skillsInfoStyle}>Tools I use for development, collaboration and API testing.</h3>
               </div>
             </div>
             <div className={DevopToolGridStyle}>
-              <SkillItem src="/devtool/git.svg" name="Git" />
-              <SkillItem src="/devtool/gitlab.svg" name="GitLab" />
-              <SkillItem src="/devtool/postman.svg" name="Postman" />
-              <SkillItem src="/devtool/github.svg" name="GitHub" />
-              <SkillItem src="/devtool/vscode.svg" name="VS Code" />
+              <SkillItem src={asset('/devtool/git.svg')} name="Git" />
+              <SkillItem src={asset('/devtool/gitlab.svg')} name="GitLab" />
+              <SkillItem src={asset('/devtool/postman.svg')} name="Postman" />
+              <SkillItem src={asset('/devtool/github.svg')} name="GitHub" />
+              <SkillItem src={asset('/devtool/vscode.svg')} name="VS Code" />
             </div>
           </div>
 
           <div className={frontendItemStyle}>
             <div className="flex">
-              <img src="/frontend/desktop.svg" className={ImageStyle} alt="" />
+              <img src={asset('/frontend/desktop.svg')} className={ImageStyle} alt="" />
               <div className="m-2">
                 <h2 className={skillsInfoHeadingStyle}>Frontend</h2>
                 <h3 className={skillsInfoStyle}>Exploring modern frontend tools to build better user experiences.</h3>
               </div>
             </div>
             <div className={frontendGridStyle}>
-              <SkillItem src="/frontend/react.svg" name="React" />
-              <SkillItem src="/frontend/tailwind.svg" name="Tailwind CSS" />
-              <SkillItem src="/frontend/vite.svg" name="Vite" />
+              <SkillItem src={asset('/frontend/react.svg')} name="React" />
+              <SkillItem src={asset('/frontend/tailwind.svg')} name="Tailwind CSS" />
+              <SkillItem src={asset('/frontend/vite.svg')} name="Vite" />
             </div>
           </div>
         </div>
