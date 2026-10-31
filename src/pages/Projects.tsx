@@ -30,7 +30,7 @@ export default function Projects() {
                         <a href="https://github.com/ranjanpranshu-ship-it/Event-Driven-Order-Processing-Pipeline" target="_blank" rel="noopener noreferrer">
                             <img src="/social/github.svg" alt="GitHub" className={linkImg} />
                         </a>
-                        <a href="https://docs.docker.com/compose/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://hub.docker.com/repositories/pran4450" target="_blank" rel="noopener noreferrer">
                             <img src="/projects/compose.svg" alt="Docker Compose" className={linkImg} />
                         </a>
                         </div><br/>
@@ -75,7 +75,7 @@ export default function Projects() {
                         <a href="https://github.com/ranjanpranshu-ship-it/Simple-E-commerce-API" target="_blank" rel="noopener noreferrer">
                             <img src="/social/github.svg" alt="GitHub" className={linkImg} />
                         </a>
-                        <a href="https://docs.docker.com/compose/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://hub.docker.com/repositories/pran4450" target="_blank" rel="noopener noreferrer">
                             <img src="/projects/compose.svg" alt="Docker Compose" className={linkImg} />
                         </a>
                         </div><br/>

@@ -58,7 +58,7 @@ export default function About() {
                         type="button"
                         onClick={() => setShowFull((v) => !v)}
                         aria-label="Toggle about details"
-                        className="p-2 text-white"
+                        className="p-2 text-white cursor-pointer"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className={`w-6 h-6 transition-transform ${showFull ? 'rotate-180' : ''}`}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
